@@ -6,6 +6,7 @@
 #/web/themes/contrib/
 #/web/profiles/contrib/
 #/web/libraries/
+/vendor/
 /web/modules/contrib/*/.git
 
 # Ignore git repos in contrib and custom modules
