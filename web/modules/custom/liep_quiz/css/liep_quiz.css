@@ -1,0 +1,220 @@
+.rq-card {
+  max-width: 640px;
+  margin: 2rem auto;
+  padding: 1.5rem 1.75rem;
+  border: 1px solid #dfe1e2;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.rq-progress {
+  font-size: 0.875rem;
+  color: #565c65;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.rq-complete-text {
+  margin: 0 0 1.25rem;
+  /* font-size: 1.35rem; */
+  font-size: 36px;
+  line-height: 1.3;
+}
+
+.rq-prompt {
+  margin: 0 0 1.25rem;
+  /* font-size: 1.35rem; */
+  font-size: 36px;
+  line-height: 1.3;
+}
+
+.rq-choices {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.rq-choice {
+  width: 100%;
+  text-align: left;
+  padding: 0.75rem 1rem;
+  border: 2px solid #66b2ff;
+  border-radius: 6px;
+  background: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: border-color 0.15s, background-color 0.15s;
+}
+
+.rq-choice:hover:not(:disabled) {
+  border-color: #005ea2;
+  background: #f0f7ff;
+}
+
+.rq-choice:disabled {
+  cursor: default;
+}
+
+.rq-choice-selected {
+  border-color: #005ea2;
+  background: #f0f7ff;
+}
+
+.rq-choice-correct {
+  border-color: #00a91c;
+  /* background: #ecf3ec; */
+  background: #caeeca;
+}
+
+.rq-choice-wrong {
+  border-color: #b50909;
+  background: #f8e1de;
+}
+
+.rq-feedback {
+  margin: 0.75rem 0 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.rq-feedback-correct {
+  /* background: #ecf3ec; */
+  background: #caeeca;
+  border-left: 4px solid #00a91c;
+}
+
+.rq-feedback-wrong {
+  background: #f8e1de;
+  border-left: 4px solid #b50909;
+}
+
+.rq-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.rq-btn {
+  padding: 0.6rem 1.25rem;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.rq-btn-primary {
+  background: #005ea2;
+  color: #fff;
+}
+
+.rq-btn-primary:disabled {
+  background: #a9aeb1;
+  cursor: not-allowed;
+}
+
+.rq-btn-primary:hover:not(:disabled) {
+  background: #1a4480;
+}
+
+a.rq-btn-primary {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.rq-btn-secondary,
+.rq-btn-next,
+.rq-btn-try,
+.rq-cert-link,
+.rq-btn-secondary:hover:not(:disabled),
+.rq-btn-next:hover:not(:disabled),
+.rq-btn-try:hover:not(:disabled),
+.rq-cert-link:hover:not(:disabled) {
+  text-decoration: none !important;
+  color: #000;
+  background-color: #ebac25;
+  border: 2px solid #fbeed2;
+}
+
+.rq-btn-next:disabled {
+  background-color: #dfe1e2;
+  color: #565c65;
+  border-color: #dfe1e2;
+  cursor: not-allowed;
+}
+
+.rq-actions-pass {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: flex-end;
+}
+
+.rq-score {
+  font-size: 1.15rem;
+  margin: 0.5rem 0 1.25rem;
+}
+
+.rq-result {
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  margin: 0.75rem 0;
+}
+
+.rq-result-pass {
+  background: #ecf3ec;
+  border-left: 4px solid #00a91c;
+  color: #00a91c;
+}
+
+.rq-result-fail {
+  background: #f8e1de;
+  border-left: 4px solid #b50909;
+  color: #b50909;
+}
+
+/* --- Dark card theme (delete this block to revert) --- */
+.rq-card {
+  background: rgb(50, 91, 155);
+  color: #fff;
+}
+
+.quiz-box {
+  position: relative;
+  overflow: visible;
+}
+
+.quiz-box:after {
+        content: "placeholder";
+        background-color: rgb(50, 91, 155);
+        background-image: url(/themes/custom/uswds_mytheme/assets/custom/images/ncela-yellow-globe.png);
+        background-repeat: no-repeat;
+        -webkit-background-size: 120px 120px;
+        background-size: 120px;
+        height: 120px;
+        width: 120px;
+        border-radius: 100px;
+        position: absolute;
+        right: -30px;
+        top: -30px;
+        color: transparent;
+        display: block;
+}
+
+
+.rq-progress {
+  color: rgba(255, 255, 255, 0.85);
+}
+.rq-choice {
+  color: #1b1b1b;
+}
+.rq-feedback {
+  color: #1b1b1b;
+}

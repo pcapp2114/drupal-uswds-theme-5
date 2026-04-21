@@ -1,0 +1,15 @@
+liep_quiz.page:
+  path: '/liep-quiz'
+  defaults:
+    _controller: '\Drupal\liep_quiz\Controller\LiepQuizController::page'
+    _title: 'LIEP Introduction Module Quiz'
+  requirements:
+    _permission: 'access content'
+
+liep_quiz.certificate:
+  path: '/liep-quiz/certificate'
+  defaults:
+    _controller: '\Drupal\liep_quiz\Controller\LiepQuizController::certificate'
+    _title: 'Certificate of Completion'
+  requirements:
+    _permission: 'access content'

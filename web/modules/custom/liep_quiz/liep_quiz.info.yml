@@ -1,0 +1,5 @@
+name: 'LIEP Introduction Module Quiz'
+type: module
+description: 'A quiz to test your skills and learn about the Language Instruction Educational Programs (LIEPs).'
+package: Custom
+core_version_requirement: ^10 || ^11
